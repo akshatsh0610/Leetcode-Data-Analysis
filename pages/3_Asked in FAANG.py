@@ -1,7 +1,9 @@
 import pandas as pd
 import streamlit as st
+from pathlib import Path
+data=Path(__file__).parents[1] / 'pages/leetcode_problem.csv'
 st.set_page_config(layout="wide")
-df=pd.read_csv('/app\pages\leetcode_problem.csv')
+df=pd.read_csv(data)
 st.write("# Enter the name of Company to see the problems asked in their interviews")
 title = st.text_input('Company name', 'Company Name')
 if title=='Company Name':

@@ -1,8 +1,9 @@
 import pandas as pd
 import streamlit as st
+from pathlib import Path
+data=Path(__file__).parents[1] / 'pages/leetcode_problem.csv'
 
-
-df=pd.read_csv('/app\pages\leetcode_problem.csv')
+df=pd.read_csv(data)
 st.write("# Enter Problem ID")
 title = st.text_input('Please enter problem id', 'Problem ID')
 if title=='Problem ID' or title=="":

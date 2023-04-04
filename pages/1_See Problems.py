@@ -1,8 +1,9 @@
 import pandas as pd
 import streamlit as st
-
+from pathlib import Path
+data=Path(__file__).parents[1] / 'pages/leetcode_problem.csv'
 st.set_page_config(layout="wide")
-df=pd.read_csv('/app\pages\leetcode_problem.csv')
+df=pd.read_csv(data)
 st.write("# Select the problem according to difficulty")
 option = st.selectbox(
     'Select the tag of problem',

@@ -5,10 +5,12 @@ import seaborn as sns
 import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
+from pathlib import Path
+data=Path(__file__).parents[1] / 'pages/leetcode_problem.csv'
 # pd.set_option('max_columns',200)
 
 #  Importing dataset
-df=pd.read_csv('/app\pages\leetcode_problem.csv')
+df=pd.read_csv(data)
 st.title('Leetcode All Problems Analysis')
 df=df.drop(['Unnamed: 0'],axis=1)
 new_df=df
