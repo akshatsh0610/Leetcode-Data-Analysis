@@ -23,7 +23,5 @@ st.markdown(
     Here you can view complete analysis of leetcode problems.
     **👈 Select an option from the sidebar** to see various 
     problems!
-    ### Download dataset from here -:
-    - https://www.kaggle.com/datasets/nehagupta09/leetcode-all-problems-dataset
 """
 )
